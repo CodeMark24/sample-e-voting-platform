@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Election System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="./public/about.html">About Us</a></li>
+                <li><a href="./public/contact.html">Contact Us</a></li>
+                <li><a href="./public/faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1>MUST Online Election Platform</h1>
+        <p>Your voice, your vote.</p>
+    </header>
+
+    <section class="hero-section">
+
+    <main>
+        <div class="login-container">
+            <h2>User Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Student ID / Staff ID</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="loginButton">Login</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </main>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Decide</p>
+    </footer>
+    <script src="login.js"></script>
+    </body>
+</html>

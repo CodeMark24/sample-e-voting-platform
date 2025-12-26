@@ -1,0 +1,264 @@
+[2025-11-09 16:35:49] === CREATE ELECTION REQUEST START ===
+[2025-11-09 16:35:49] Authenticated as admin user ID: 3
+[2025-11-09 16:35:49] Database connected
+[2025-11-09 16:35:49] Raw input received: {"electionTitle":"president","electionDescription":"sample","startDate":"2025-11-09","startTime":"19:28","endDate":"2025-11-09","endTime":"20:29","candidates":[{"name":"MARK","manifesto":"sample"},{"n
+[2025-11-09 16:35:49] Start time: 2025-11-09 19:28:00, End time: 2025-11-09 20:29:00
+[2025-11-09 16:35:49] Transaction started
+[2025-11-09 16:35:49] Election created with ID: 1
+[2025-11-09 16:35:49] Candidate added: MARK
+[2025-11-09 16:35:49] Candidate added: bob
+[2025-11-09 16:35:49] Transaction committed successfully
+[2025-11-09 16:37:44] === CREATE ELECTION REQUEST START ===
+[2025-11-09 16:37:44] Authenticated as admin user ID: 3
+[2025-11-09 16:37:44] Database connected
+[2025-11-09 16:37:44] Raw input received: {"electionTitle":"president","electionDescription":"sample 2","startDate":"2025-11-10","startTime":"19:37","endDate":"2025-11-10","endTime":"20:37","candidates":[{"name":"bob","manifesto":"sample"},{"
+[2025-11-09 16:37:44] Start time: 2025-11-10 19:37:00, End time: 2025-11-10 20:37:00
+[2025-11-09 16:37:44] Transaction started
+[2025-11-09 16:37:44] Election created with ID: 2
+[2025-11-09 16:37:44] Candidate added: bob
+[2025-11-09 16:37:44] Candidate added: mark
+[2025-11-09 16:37:44] Transaction committed successfully
+[2025-11-09 17:29:04] === CANCEL ELECTION REQUEST START ===
+[2025-11-09 17:29:04] Authenticated as admin user ID: 3
+[2025-11-09 17:29:04] Raw input: {"election_id":1}
+[2025-11-09 17:29:04] Cancelling election ID: 1
+[2025-11-09 17:29:05] Election cancelled successfully: president
+[2025-11-09 17:29:12] === CANCEL ELECTION REQUEST START ===
+[2025-11-09 17:29:12] Authenticated as admin user ID: 3
+[2025-11-09 17:29:12] Raw input: {"election_id":2}
+[2025-11-09 17:29:12] Cancelling election ID: 2
+[2025-11-09 17:29:12] Election cancelled successfully: president
+[2025-11-09 17:29:29] === CANCEL ELECTION REQUEST START ===
+[2025-11-09 17:29:29] Authenticated as admin user ID: 3
+[2025-11-09 17:29:29] Raw input: {"election_id":1}
+[2025-11-09 17:29:29] Cancelling election ID: 1
+[2025-11-09 17:29:29] Election cancelled successfully: president
+[2025-11-09 17:50:30] === CANCEL ELECTION REQUEST START ===
+[2025-11-09 17:50:30] Authenticated as admin user ID: 3
+[2025-11-09 17:50:30] Raw input: {"election_id":1}
+[2025-11-09 17:50:30] Cancelling election ID: 1
+[2025-11-09 17:50:30] Election cancelled successfully: president
+[2025-11-09 17:50:35] === CANCEL ELECTION REQUEST START ===
+[2025-11-09 17:50:35] Authenticated as admin user ID: 3
+[2025-11-09 17:50:35] Raw input: {"election_id":2}
+[2025-11-09 17:50:35] Cancelling election ID: 2
+[2025-11-09 17:50:35] Election cancelled successfully: president
+[2025-11-09 17:51:48] === CREATE ELECTION REQUEST START ===
+[2025-11-09 17:51:48] Authenticated as admin user ID: 3
+[2025-11-09 17:51:48] Database connected
+[2025-11-09 17:51:48] Raw input received: {"electionTitle":"sample election","electionDescription":"test","startDate":"2025-11-09","startTime":"20:51","endDate":"2025-11-09","endTime":"21:51","candidates":[{"name":"Mark Tom","manifesto":"test
+[2025-11-09 17:51:48] Start time: 2025-11-09 20:51:00, End time: 2025-11-09 21:51:00
+[2025-11-09 17:51:48] Transaction started
+[2025-11-09 17:51:48] Election created with ID: 3
+[2025-11-09 17:51:48] Candidate added: Mark Tom
+[2025-11-09 17:51:48] Candidate added: billy blue
+[2025-11-09 17:51:48] Transaction committed successfully
+[2025-11-09 18:06:08] === CAST VOTE REQUEST START ===
+[2025-11-09 18:06:08] Request method: POST
+[2025-11-09 18:06:08] Session ID: fi0s96nnhfgqos0goio4rgdu7o
+[2025-11-09 18:06:08] Session status: ACTIVE
+[2025-11-09 18:06:08] Authenticated as student user ID: 1
+[2025-11-09 21:06:08] Database connected successfully
+[2025-11-09 21:06:08] Raw input: {"election_id":"3","candidate_id":"6"}
+[2025-11-09 21:06:08] Validated: election_id=3, candidate_id=6, voter_id=1
+[2025-11-09 21:06:08] Transaction rolled back due to PDO error
+[2025-11-09 21:06:08] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'current_time
+                         FROM elections 
+                        ' at line 1
+[2025-11-09 21:06:08] Error Code: 42000
+[2025-11-09 18:06:09] === CAST VOTE REQUEST START ===
+[2025-11-09 18:06:09] Request method: POST
+[2025-11-09 18:06:09] Session ID: fi0s96nnhfgqos0goio4rgdu7o
+[2025-11-09 18:06:09] Session status: ACTIVE
+[2025-11-09 18:06:09] Authenticated as student user ID: 1
+[2025-11-09 21:06:09] Database connected successfully
+[2025-11-09 21:06:09] Raw input: {"election_id":"3","candidate_id":"6"}
+[2025-11-09 21:06:09] Validated: election_id=3, candidate_id=6, voter_id=1
+[2025-11-09 21:06:09] Transaction rolled back due to PDO error
+[2025-11-09 21:06:09] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'current_time
+                         FROM elections 
+                        ' at line 1
+[2025-11-09 21:06:09] Error Code: 42000
+[2025-11-09 18:06:33] === CAST VOTE REQUEST START ===
+[2025-11-09 18:06:33] Request method: POST
+[2025-11-09 18:06:33] Session ID: fi0s96nnhfgqos0goio4rgdu7o
+[2025-11-09 18:06:33] Session status: ACTIVE
+[2025-11-09 18:06:33] Authenticated as student user ID: 1
+[2025-11-09 21:06:33] Database connected successfully
+[2025-11-09 21:06:33] Raw input: {"election_id":"3","candidate_id":"6"}
+[2025-11-09 21:06:33] Validated: election_id=3, candidate_id=6, voter_id=1
+[2025-11-09 21:06:33] Transaction rolled back due to PDO error
+[2025-11-09 21:06:33] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'current_time
+                         FROM elections 
+                        ' at line 1
+[2025-11-09 21:06:33] Error Code: 42000
+[2025-11-09 18:06:46] === CAST VOTE REQUEST START ===
+[2025-11-09 18:06:46] Request method: POST
+[2025-11-09 18:06:46] Session ID: fi0s96nnhfgqos0goio4rgdu7o
+[2025-11-09 18:06:46] Session status: ACTIVE
+[2025-11-09 18:06:46] Authenticated as student user ID: 1
+[2025-11-09 21:06:46] Database connected successfully
+[2025-11-09 21:06:46] Raw input: {"election_id":"3","candidate_id":"6"}
+[2025-11-09 21:06:46] Validated: election_id=3, candidate_id=6, voter_id=1
+[2025-11-09 21:06:46] Transaction rolled back due to PDO error
+[2025-11-09 21:06:46] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'current_time
+                         FROM elections 
+                        ' at line 1
+[2025-11-09 21:06:46] Error Code: 42000
+[2025-11-09 21:12:22] === CAST VOTE REQUEST START ===
+[2025-11-09 21:12:22] Method: POST
+[2025-11-09 21:12:22] Voter ID: 1
+[2025-11-09 21:12:22] DB connected
+[2025-11-09 21:12:22] Input: {"election_id":"3","candidate_id":"6"}
+[2025-11-09 21:12:22] election_id=3, candidate_id=6, voter_id=1
+[2025-11-09 21:12:22] Transaction started
+[2025-11-09 21:12:22] Election: sample election | Now: 2025-11-09 21:12:22 | Start: 2025-11-09 20:51:00 | End: 2025-11-09 21:51:00
+[2025-11-09 21:12:22] Timestamps - now: 1762711942, start: 1762710660, end: 1762714260
+[2025-11-09 21:12:22] Election is ACTIVE
+[2025-11-09 21:12:22] Candidate: billy blue
+[2025-11-09 21:12:22] Executing INSERT query
+[2025-11-09 21:12:22] Vote inserted: vote_id=1
+[2025-11-09 21:12:22] Transaction committed
+[2025-11-09 21:33:03] === CAST VOTE REQUEST START ===
+[2025-11-09 21:33:03] Method: POST
+[2025-11-09 21:33:03] Voter ID: 2
+[2025-11-09 21:33:03] DB connected
+[2025-11-09 21:33:03] Input: {"election_id":"3","candidate_id":"6"}
+[2025-11-09 21:33:03] election_id=3, candidate_id=6, voter_id=2
+[2025-11-09 21:33:03] Transaction started
+[2025-11-09 21:33:03] Election: sample election | Now: 2025-11-09 21:33:03 | Start: 2025-11-09 20:51:00 | End: 2025-11-09 21:51:00
+[2025-11-09 21:33:03] Timestamps - now: 1762713183, start: 1762710660, end: 1762714260
+[2025-11-09 21:33:03] Election is ACTIVE
+[2025-11-09 21:33:03] Candidate: billy blue
+[2025-11-09 21:33:03] Executing INSERT query
+[2025-11-09 21:33:03] Vote inserted: vote_id=2
+[2025-11-09 21:33:03] Transaction committed
+[2025-11-09 18:34:32] === CANCEL ELECTION REQUEST START ===
+[2025-11-09 18:34:32] Authenticated as admin user ID: 3
+[2025-11-09 21:34:32] Raw input: {"election_id":2}
+[2025-11-09 21:34:32] Cancelling election ID: 2
+[2025-11-09 21:34:32] Election cancelled successfully: president
+[2025-11-11 09:15:57] === CREATE ELECTION REQUEST START ===
+[2025-11-11 09:15:57] Authenticated as admin user ID: 3
+[2025-11-11 12:15:57] Database connected
+[2025-11-11 12:15:57] Raw input received: {"electionTitle":"GROUP LEADER","electionDescription":"a leader who is going to manage all projects and assignments","startDate":"2025-11-11","startTime":"12:12","endDate":"2025-11-11","endTime":"12:2
+[2025-11-11 12:15:57] Start time: 2025-11-11 12:12:00, End time: 2025-11-11 12:20:00
+[2025-11-11 12:15:57] Transaction started
+[2025-11-11 12:15:57] Election created with ID: 4
+[2025-11-11 12:15:57] Candidate added: mark
+[2025-11-11 12:15:57] Candidate added: gabby
+[2025-11-11 12:15:57] Transaction committed successfully
+[2025-11-11 12:16:41] === CAST VOTE REQUEST START ===
+[2025-11-11 12:16:41] Method: POST
+[2025-11-11 12:16:41] Voter ID: 1
+[2025-11-11 12:16:41] DB connected
+[2025-11-11 12:16:41] Input: {"election_id":"4","candidate_id":"7"}
+[2025-11-11 12:16:41] election_id=4, candidate_id=7, voter_id=1
+[2025-11-11 12:16:41] Transaction started
+[2025-11-11 12:16:41] Election: GROUP LEADER | Now: 2025-11-11 12:16:41 | Start: 2025-11-11 12:12:00 | End: 2025-11-11 12:20:00
+[2025-11-11 12:16:41] Timestamps - now: 1762852601, start: 1762852320, end: 1762852800
+[2025-11-11 12:16:41] Election is ACTIVE
+[2025-11-11 12:16:41] Candidate: mark
+[2025-11-11 12:16:41] Executing INSERT query
+[2025-11-11 12:16:41] Vote inserted: vote_id=3
+[2025-11-11 12:16:41] Transaction committed
+[2025-11-11 12:19:23] === CAST VOTE REQUEST START ===
+[2025-11-11 12:19:23] Method: POST
+[2025-11-11 12:19:23] Voter ID: 2
+[2025-11-11 12:19:23] DB connected
+[2025-11-11 12:19:23] Input: {"election_id":"4","candidate_id":"8"}
+[2025-11-11 12:19:23] election_id=4, candidate_id=8, voter_id=2
+[2025-11-11 12:19:23] Transaction started
+[2025-11-11 12:19:23] Election: GROUP LEADER | Now: 2025-11-11 12:19:23 | Start: 2025-11-11 12:12:00 | End: 2025-11-11 12:20:00
+[2025-11-11 12:19:23] Timestamps - now: 1762852763, start: 1762852320, end: 1762852800
+[2025-11-11 12:19:23] Election is ACTIVE
+[2025-11-11 12:19:23] Candidate: gabby
+[2025-11-11 12:19:23] Executing INSERT query
+[2025-11-11 12:19:23] Vote inserted: vote_id=4
+[2025-11-11 12:19:23] Transaction committed
+[2025-11-12 14:43:33] === CREATE ELECTION REQUEST START ===
+[2025-11-12 14:43:33] Authenticated as admin user ID: 8
+[2025-11-12 17:43:33] Database connected
+[2025-11-12 17:43:33] Raw input received: {"electionTitle":"testing election functionality","electionDescription":"testing 1 2 1 2","startDate":"2025-11-12","startTime":"17:43","endDate":"2025-11-12","endTime":"17:49","candidates":[{"name":"m
+[2025-11-12 17:43:33] Start time: 2025-11-12 17:43:00, End time: 2025-11-12 17:49:00
+[2025-11-12 17:43:33] Transaction started
+[2025-11-12 17:43:33] Election created with ID: 1
+[2025-11-12 17:43:33] Candidate added: mark
+[2025-11-12 17:43:33] Candidate added: gabby
+[2025-11-12 17:43:33] Transaction committed successfully
+[2025-11-12 17:44:10] === CAST VOTE REQUEST START ===
+[2025-11-12 17:44:10] Method: POST
+[2025-11-12 17:44:10] Voter ID: 1
+[2025-11-12 17:44:10] DB connected
+[2025-11-12 17:44:10] Input: {"election_id":"1","candidate_id":"2"}
+[2025-11-12 17:44:10] election_id=1, candidate_id=2, voter_id=1
+[2025-11-12 17:44:10] Transaction started
+[2025-11-12 17:44:10] Election: testing election functionality | Now: 2025-11-12 17:44:10 | Start: 2025-11-12 17:43:00 | End: 2025-11-12 17:49:00
+[2025-11-12 17:44:10] Timestamps - now: 1762958650, start: 1762958580, end: 1762958940
+[2025-11-12 17:44:10] Election is ACTIVE
+[2025-11-12 17:44:10] Candidate: gabby
+[2025-11-12 17:44:10] Executing INSERT query
+[2025-11-12 17:44:10] Vote inserted: vote_id=1
+[2025-11-12 17:44:10] Transaction committed
+[2025-11-13 06:49:08] === CREATE ELECTION REQUEST START ===
+[2025-11-13 06:49:08] Authenticated as admin user ID: 8
+[2025-11-13 09:49:08] Database connected
+[2025-11-13 09:49:08] Raw input received: {"electionTitle":"GUILD ELECTIONS","electionDescription":"Simply Guild elections...","startDate":"2025-11-13","startTime":"09:48","endDate":"2025-11-13","endTime":"09:52","candidates":[{"name":"mark",
+[2025-11-13 09:49:08] Start time: 2025-11-13 09:48:00, End time: 2025-11-13 09:52:00
+[2025-11-13 09:49:08] Transaction started
+[2025-11-13 09:49:08] Election created with ID: 2
+[2025-11-13 09:49:08] Candidate added: mark
+[2025-11-13 09:49:08] Candidate added: Stanley
+[2025-11-13 09:49:08] Transaction committed successfully
+[2025-11-13 09:50:10] === CAST VOTE REQUEST START ===
+[2025-11-13 09:50:10] Method: POST
+[2025-11-13 09:50:10] Voter ID: 1
+[2025-11-13 09:50:10] DB connected
+[2025-11-13 09:50:10] Input: {"election_id":"2","candidate_id":"4"}
+[2025-11-13 09:50:10] election_id=2, candidate_id=4, voter_id=1
+[2025-11-13 09:50:10] Transaction started
+[2025-11-13 09:50:10] Election: GUILD ELECTIONS | Now: 2025-11-13 09:50:10 | Start: 2025-11-13 09:48:00 | End: 2025-11-13 09:52:00
+[2025-11-13 09:50:10] Timestamps - now: 1763016610, start: 1763016480, end: 1763016720
+[2025-11-13 09:50:10] Election is ACTIVE
+[2025-11-13 09:50:10] Candidate: Stanley
+[2025-11-13 09:50:10] Executing INSERT query
+[2025-11-13 09:50:10] Vote inserted: vote_id=2
+[2025-11-13 09:50:10] Transaction committed
+[2025-12-11 16:43:56] === CREATE ELECTION REQUEST START ===
+[2025-12-11 16:43:56] Authenticated as admin user ID: 8
+[2025-12-11 19:43:56] Database connected
+[2025-12-11 19:43:56] Raw input received: {"electionTitle":"home admin","electionDescription":"in charge of home duties","startDate":"2025-12-11","startTime":"19:43","endDate":"2025-12-11","endTime":"19:49","candidates":[{"name":"max","manife
+[2025-12-11 19:43:56] Start time: 2025-12-11 19:43:00, End time: 2025-12-11 19:49:00
+[2025-12-11 19:43:56] Transaction started
+[2025-12-11 19:43:56] Election created with ID: 4
+[2025-12-11 19:43:56] Candidate added: max
+[2025-12-11 19:43:56] Candidate added: Michael
+[2025-12-11 19:43:57] Transaction committed successfully
+[2025-12-11 19:45:55] === CAST VOTE REQUEST START ===
+[2025-12-11 19:45:55] Method: POST
+[2025-12-11 19:45:55] Voter ID: 1
+[2025-12-11 19:45:55] DB connected
+[2025-12-11 19:45:55] Input: {"election_id":"4","candidate_id":"7"}
+[2025-12-11 19:45:55] election_id=4, candidate_id=7, voter_id=1
+[2025-12-11 19:45:55] Transaction started
+[2025-12-11 19:45:55] Election: home admin | Now: 2025-12-11 19:45:55 | Start: 2025-12-11 19:43:00 | End: 2025-12-11 19:49:00
+[2025-12-11 19:45:55] Timestamps - now: 1765471555, start: 1765471380, end: 1765471740
+[2025-12-11 19:45:55] Election is ACTIVE
+[2025-12-11 19:45:55] Candidate: max
+[2025-12-11 19:45:55] Executing INSERT query
+[2025-12-11 19:45:55] Vote inserted: vote_id=3
+[2025-12-11 19:45:55] Transaction committed
+[2025-12-11 19:48:19] === CAST VOTE REQUEST START ===
+[2025-12-11 19:48:19] Method: POST
+[2025-12-11 19:48:19] Voter ID: 2
+[2025-12-11 19:48:19] DB connected
+[2025-12-11 19:48:19] Input: {"election_id":"4","candidate_id":"7"}
+[2025-12-11 19:48:19] election_id=4, candidate_id=7, voter_id=2
+[2025-12-11 19:48:19] Transaction started
+[2025-12-11 19:48:19] Election: home admin | Now: 2025-12-11 19:48:19 | Start: 2025-12-11 19:43:00 | End: 2025-12-11 19:49:00
+[2025-12-11 19:48:19] Timestamps - now: 1765471699, start: 1765471380, end: 1765471740
+[2025-12-11 19:48:19] Election is ACTIVE
+[2025-12-11 19:48:19] Candidate: max
+[2025-12-11 19:48:19] Executing INSERT query
+[2025-12-11 19:48:19] Vote inserted: vote_id=4
+[2025-12-11 19:48:19] Transaction committed

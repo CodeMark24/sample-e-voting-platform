@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Election System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <header class="dashboard-header">
+        <div class="header-content">
+            <span id="user-role-display">Role: Loading...</span>
+            <h1>Dashboard</h1>
+            <button id="logout-button" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        
+        <!-- STUDENT DASHBOARD -->
+        <div id="student-dashboard" class="role-dashboard" style="display: none;">
+            <h2>Student Actions</h2>
+            <div class="dashboard-actions">
+                <a href="#upcoming" class="action-btn">
+                     View Upcoming Elections
+                </a>
+                <a href="#active" class="action-btn primary-action">
+                     View Active Elections (Vote Now)
+                </a>
+                <a href="#results" class="action-btn">
+                     View Results
+                </a>
+            </div>
+
+            <div id="student-content-area" class="content-area">
+                <h3>Welcome! Select an action above.</h3>
+            </div>
+        </div>
+
+        <!-- ADMIN DASHBOARD -->
+        <div id="admin-dashboard" class="role-dashboard" style="display: none;">
+            <h2>Admin Management Panel</h2>
+            <div class="dashboard-actions">
+                <a href="#create-election" class="action-btn primary-action">
+                     Create New Election
+                </a>
+                <a href="#upcoming-admin" class="action-btn">
+                     Manage Upcoming Elections
+                </a>
+                <a href="#active-admin" class="action-btn">
+                     View Active Elections
+                </a>
+                <a href="#results-admin" class="action-btn">
+                     View/Certify Results
+                </a>
+            </div>
+
+            <div id="admin-content-area" class="content-area">
+                <h3>Manage the election system. Select an action above.</h3>
+            </div>
+        </div>
+
+    </main>
+    <script src="websocket-client.js"></script>
+    <script src="create_election.js"></script>
+    <script src="voting.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

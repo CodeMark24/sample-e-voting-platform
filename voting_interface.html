@@ -1,0 +1,39 @@
+<div class="voting-container">
+    <h2>Active Election: </h2>
+    <p class="election-period">Voting</p>
+    
+    <form id="votingForm" data-election-id="123">
+        
+        <p class="instruction-text">Please select **only one** candidate to cast your vote.</p>
+
+        <div id="candidates-grid" class="candidates-grid">
+            <div class="candidate-card">
+                <input type="radio" id="candidateA" name="vote" value="candidate_A_id" required>
+                <label for="candidateA" class="candidate-label">
+                    <div class="candidate-info">
+                        <h3></h3>
+                        <p class="manifesto-excerpt">Manifesto: </p>
+                    </div>
+                </label>
+            </div>
+
+            <div class="candidate-card">
+                <input type="radio" id="candidateB" name="vote" value="candidate_B_id">
+                <label for="candidateB" class="candidate-label">
+                    <div class="candidate-info">
+                        <h3></h3>
+                        <p class="manifesto-excerpt">Manifesto: </p>
+                    </div>
+                </label>
+            </div>
+            
+            </div> <div class="submit-group voting-submit-group">
+            <button type="submit" class="submit-btn primary-action confirm-vote-btn">
+                Cast My Vote Securely
+            </button>
+        </div>
+        
+        <p id="voting-message" class="error-message"></p>
+    </form>
+</div>
+<link rel="stylesheet" href="styles.css">

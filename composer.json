@@ -1,0 +1,13 @@
+{
+    "name": "must/election-system",
+    "description": "Online Election System with WebSocket Support",
+    "require": {
+        "php": ">=7.4",
+        "cboden/ratchet": "^0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Election\\": "src/"
+        }
+    }
+}

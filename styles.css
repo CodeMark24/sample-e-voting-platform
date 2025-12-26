@@ -1,0 +1,509 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section{
+    background-image: url("./images/index-coverphoto.png");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0056b3;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #004494;
+}
+
+/* Main Content Area */
+main {
+    flex-grow: 1; /* Allows the main content to fill the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Login Container */
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limits the form width */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Login Button */
+#loginButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green button for action */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#loginButton:hover {
+    background-color: #218838;
+}
+
+/* Error Message (Initially hidden) */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    display: none; /* Hidden until JavaScript shows it */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+/* --- Dashboard Specific Styles (Append to existing styles.css) --- */
+
+.dashboard-body {
+    background-color: #e9ecef; /* Lighter background for the dashboard */
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background-color: #343a40; /* Darker bar for admin/student separation */
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#user-role-display {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+
+.logout-btn {
+    background-color: #dc3545; /* Red for logout/danger */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Main Dashboard Area */
+.dashboard-main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.role-dashboard {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.role-dashboard h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Action Buttons Container */
+.dashboard-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 12px 25px;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #e9f5ff;
+}
+
+.action-btn.primary-action {
+    background-color: #28a745; /* Distinct color for primary actions like 'Vote' or 'Create' */
+    color: white;
+    border: 1px solid #28a745;
+}
+
+.action-btn.primary-action:hover {
+    background-color: #218838;
+}
+
+/* Content Area for dynamic loading */
+.content-area {
+    min-height: 200px;
+    padding: 20px;
+    border: 1px dashed #ced4da;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+/* --- Create Election Form Styles (Append to existing styles.css) --- */
+
+.form-container {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #007bff;
+}
+
+/* Fieldset and Legend for grouping */
+.election-fieldset,
+.time-fieldset,
+.candidate-fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #343a40;
+    padding: 0 10px;
+}
+
+/* Input Row for side-by-side elements */
+.input-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.input-row .input-group {
+    flex: 1; /* Makes groups share space equally */
+}
+
+/* General Input Styling for forms */
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group input[type="time"],
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Candidate Management Styles */
+#candidates-list {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px dashed #ced4da;
+    border-radius: 4px;
+}
+
+.candidate-entry {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.candidate-entry .input-group {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.remove-candidate-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.remove-candidate-btn:hover {
+    background-color: #c82333;
+}
+
+.add-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffc107; /* Yellow/Orange for "Add" */
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-btn:hover {
+    background-color: #e0a800;
+}
+
+.placeholder-text {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+/* Submit Button Group */
+.submit-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    padding: 15px 40px;
+    font-size: 20px;
+}
+/* --- Voting Interface Styles --- */
+
+.voting-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.election-period {
+    text-align: center;
+    font-weight: bold;
+    color: #dc3545; /* Red to emphasize the deadline */
+    margin-bottom: 25px;
+}
+
+.instruction-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.candidates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Hide the actual radio button */
+.candidate-card input[type="radio"] {
+    display: none;
+}
+
+.candidate-label {
+    display: block;
+    cursor: pointer;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+}
+
+/* Style for the selected candidate */
+.candidate-card input[type="radio"]:checked + .candidate-label {
+    border-color: #28a745; /* Green highlight for selection */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
+    background-color: #e6ffec;
+}
+
+.candidate-info h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.manifesto-excerpt {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.voting-submit-group {
+    margin-top: 40px;
+}
+
+.confirm-vote-btn {
+    width: 100%;
+    padding: 15px;
+}
+
+/* --- Confirmation Screen Styles --- */
+
+.confirmation-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #e6ffec; /* Light green background for success */
+    border: 3px solid #28a745;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-container h2 {
+    color: #28a745;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.confirmation-lead {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.confirmation-details {
+    padding: 20px;
+    border-top: 1px solid #c3e6cb;
+    border-bottom: 1px solid #c3e6cb;
+    margin-bottom: 25px;
+}
+
+#countdown-message {
+    font-weight: bold;
+    color: #dc3545;
+    margin-bottom: 20px;
+}
+
+.disabled-btn {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

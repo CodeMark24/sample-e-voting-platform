@@ -1,0 +1,61 @@
+<div class="form-container">
+    <h2>Create New Election</h2>
+    <form id="createElectionForm">
+        
+        <fieldset class="election-fieldset">
+            <legend>Election Information</legend>
+            <div class="input-group">
+                <label for="electionTitle">Election Title/Description</label>
+                <input type="text" id="electionTitle" name="electionTitle" placeholder="e.g., Student Guild President Election 2025" required>
+            </div>
+
+            <div class="input-group">
+                <label for="electionDescription">Detailed Description (Optional)</label>
+                <textarea id="electionDescription" name="electionDescription" rows="3" placeholder="A brief overview of the election purpose."></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset class="time-fieldset">
+            <legend>Schedule</legend>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                <div class="input-group">
+                    <label for="startTime">Start Time</label>
+                    <input type="time" id="startTime" name="startTime" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                </div>
+                <div class="input-group">
+                    <label for="endTime">End Time</label>
+                    <input type="time" id="endTime" name="endTime" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="candidate-fieldset">
+            <legend>Candidates</legend>
+            <div id="candidates-list">
+                <p class="placeholder-text">Click the button below to add candidates.</p>
+            </div>
+            <button type="button" id="addCandidateBtn" class="add-btn"> Add Candidate</button>
+            <input type="hidden" name="candidateCount" id="candidateCount" value="0">
+        </fieldset>
+
+        <div class="submit-group">
+            <button type="submit" class="submit-btn primary-action">
+                <i class="fas fa-save"></i> Submit Election
+            </button>
+        </div>
+
+        <p id="form-message" class="error-message"></p>
+    </form>
+</div>
+<link rel="stylesheet" href="styles.css">
