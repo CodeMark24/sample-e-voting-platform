@@ -1,4 +1,4 @@
-# sample-e-voting-platform
+# sample e-voting-platform
 Simple e-voting system for an academic institution implemented in php
 #Online Election System
 
