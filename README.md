@@ -4,7 +4,7 @@ Simple e-voting system for an academic institution implemented in php
 
 ## Project Overview
 
-This is a web-based election system built for Mbarara University of Science and Technology (MUST). The system allows students to vote in elections and administrators to create and manage elections. It includes real-time updates using WebSocket technology.
+This is a web-based election system built for a higher educational institution. The system allows students to vote in elections and administrators to create and manage elections. It includes real-time updates using WebSocket technology.
 
 ## Features
 
